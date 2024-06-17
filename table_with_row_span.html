@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      table {
+        border: 1.5px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1.5px solid black;
+        padding: 5px;
+        width: 200px;
+      }
+      #head {
+        background-color: rgb(157, 71, 71);
+        color: white;
+      }
+
+      .detail{
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h3>This is the example of --rowspan--</h3>
+    <table>
+      <tr id="head">
+        <th >Id</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Mob-no</th>
+      </tr>
+      <tr>
+        <td>101</td>
+        <td>Anand</td>
+        <td>Nagpur</td>
+        <td>3768</td>
+      </tr>
+      <tr class="detail">
+        <td rowspan="2">102</td>
+        <td>Milind</td>
+        <td rowspan="2">Aurangabad</td>
+        <td>7345</td>
+      </tr>
+      <tr class="detail">
+        <td>Akshay</td>
+        <td>3768</td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Saurabh</td>
+        <td>Akola</td>
+        <td>3745</td>
+      </tr>
+      <tr>
+        <td>104</td>
+        <td>Sanket</td>
+        <td>Pune</td>
+        <td>6345</td>
+      </tr>
+    </table>
+
+    
+  </body>
+</html>
